@@ -1,0 +1,552 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHXTFC6MGH"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-EHXTFC6MGH');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advocacia | Defesa estratégica</title>
+  <meta name="description" content="Advocacia empresarial, de família e contencioso estratégico. Atendimento direto com os sócios, do primeiro contato à sentença.">
+  <meta name="theme-color" content="#111E33">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M0 0h48l16 16v48H0z' fill='%23C1A16B'/%3E%3Ctext x='32' y='50' font-size='46' font-weight='800' text-anchor='middle' fill='%23FFFFFF' font-family='Georgia,serif'%3EA%3C/text%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/newsreader-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/hanken-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="progress" data-progress aria-hidden="true"></div>
+
+  <!-- Dados de contato abaixo são de exemplo (mock). Trocar pelos reais do escritório. -->
+  <header class="nav" data-nav>
+    <div class="topbar">
+      <div class="topbar__in">
+        <span>{{icon:clock}} Seg a sex, 9h às 18h</span>
+        <span class="topbar__mid">{{icon:map-pin}} Rua do Fórum, 000, Centro</span>
+        <a href="tel:+551100000000">{{icon:phone}} (11) 0000-0000</a>
+      </div>
+    </div>
+    <div class="nav__main">
+      <a class="brand" href="#topo" aria-label="Advocacia, início">
+        <span class="brand__mark cut" aria-hidden="true">A</span>
+        <span class="brand__name">Advocacia<small>Defesa estratégica</small></span>
+      </a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#atuacao">Áreas</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn--primary btn--sm" href="#contato" data-magnetic><span class="btn__label" data-split>Agendar consulta</span></a>
+    </div>
+  </header>
+
+  <main id="topo">
+    <!-- 1. HERO: balança 3D em WebGL, com abertura em cena -->
+    <section class="hero" data-hero>
+      <canvas class="hero__canvas" data-canvas aria-hidden="true"></canvas>
+      <img class="hero__fallback" src="img/hero-fallback.webp" alt="" aria-hidden="true" width="1600" height="900">
+      <div class="hero__copy">
+        <h1 aria-label="Rigor na prova. Firmeza na defesa.">
+          <span class="line" aria-hidden="true"><span>Rigor na prova.</span></span>
+          <span class="line line--outline" aria-hidden="true"><span data-t="Firmeza na defesa.">Firmeza na defesa.</span></span>
+        </h1>
+        <p class="hero__sub" data-fade>Advocacia empresarial, de família e contencioso estratégico. Atendimento direto com os sócios, do primeiro contato à sentença.</p>
+        <div class="hero__cta" data-fade>
+          <a class="btn btn--primary" href="#contato" data-magnetic><span class="btn__label" data-split>Agendar consulta</span></a>
+          <a class="btn btn--ghost" href="#areas" data-magnetic>
+            <span class="btn__label" data-split>Ver áreas de atuação</span>
+            <span class="btn__arrow" aria-hidden="true">{{icon:arrow-down-right}}{{icon:arrow-down-right}}</span>
+          </a>
+        </div>
+        <ul class="hero__trust" data-fade>
+          <li>{{icon:shield-check:light}} Sigilo profissional</li>
+          <li>{{icon:handshake:light}} Atendimento direto pelos sócios</li>
+          <li>{{icon:clock:light}} Retorno em até 1 dia útil</li>
+        </ul>
+      </div>
+      <aside class="hero__card cut glass" data-fade>
+        <p class="hero__card-k">Primeira conversa</p>
+        <p class="hero__card-t">Conte o caso a um sócio.</p>
+        <p class="hero__card-s">Retorno em até um dia útil, sem compromisso.</p>
+        <a class="round" href="#contato" aria-label="Ir para o formulário de contato">{{icon:arrow-up-right}}</a>
+      </aside>
+    </section>
+
+    <!-- 2. FAIXA DE ÁREAS (5 ícones) -->
+    <section class="strip" aria-label="Áreas em resumo">
+      <ul class="strip__list">
+        <li data-reveal>{{icon:buildings:light}}<b>Empresarial</b><span>Contratos e societário</span></li>
+        <li data-reveal>{{icon:users-three:light}}<b>Família</b><span>Divórcio e sucessões</span></li>
+        <li data-reveal>{{icon:handshake:light}}<b>Trabalhista</b><span>Defesa e acordos</span></li>
+        <li data-reveal>{{icon:gavel:light}}<b>Cível</b><span>Contencioso estratégico</span></li>
+        <li data-reveal>{{icon:file-text:light}}<b>Consultivo</b><span>Pareceres e contratos</span></li>
+      </ul>
+    </section>
+
+    <!-- QUEM SOMOS -->
+    <section class="sec" id="quem-somos">
+      <div class="sec__in about">
+        <div class="about__lead" data-reveal>
+          <p class="eyebrow">Quem somos</p>
+          <h2 class="sec-h">Advocacia construída sobre técnica, ética e presença.</h2>
+          <figure class="about__fig"><img src="img/foto-equipe.webp" alt="" loading="lazy" width="900" height="480"></figure>
+        </div>
+        <div class="about__text" data-reveal>
+          <p class="lede">Atuamos há quase três décadas na defesa de pessoas e empresas, com uma convicção simples: cada caso é único e merece a atenção direta de quem assina a peça.</p>
+          <p>O escritório nasceu da vontade de oferecer uma advocacia próxima, técnica e transparente. Não trabalhamos com atendimento em massa. Cada cliente é recebido por um sócio, que acompanha o caso do primeiro contato até a decisão final, sem intermediários e sem surpresas pelo caminho.</p>
+          <p>Atuamos de forma preventiva e contenciosa. Na prevenção, revisamos contratos, estruturamos operações e orientamos decisões para evitar o litígio. No contencioso, conduzimos o processo com estratégia, prova bem construída e comunicação constante com o cliente, em linguagem que dispensa tradução.</p>
+          <p>Seguimos rigorosamente o Código de Ética e Disciplina da OAB. Isso significa sigilo absoluto, clareza sobre riscos e custos e nenhuma promessa de resultado, porque a advocacia séria compromete-se com o método, não com o desfecho.</p>
+        </div>
+      </div>
+      <div class="sec__in pillars">
+        <article data-reveal><span class="pillars__k">Missão</span><p>Defender direitos com técnica, ética e proximidade, transformando situações complexas em caminhos claros para o cliente.</p></article>
+        <article data-reveal><span class="pillars__k">Visão</span><p>Ser referência em advocacia de confiança, reconhecida pela qualidade do trabalho e pela relação duradoura com quem atendemos.</p></article>
+        <article data-reveal><span class="pillars__k">Valores</span><p>Sigilo, ética, transparência, responsabilidade e respeito ao tempo e à história de cada cliente.</p></article>
+      </div>
+    </section>
+
+    <!-- 3. ÁREAS: rolagem horizontal fixada, cartões de imagem com inclinação 3D -->
+    <section class="areas" id="areas" data-pan>
+      <div class="pan__viewport" data-pan-viewport>
+        <div class="pan__track" data-pan-track>
+          <div class="pan__intro">
+            <h2>Foco em<br><span class="outline">resolver</span></h2>
+            <p>Cinco frentes e uma mesma regra: preparar cada caso como se a audiência fosse amanhã.</p>
+          </div>
+
+          <article class="card" data-tilt>
+            <div class="card__media"><img src="img/foto-equipe.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">01 / 05</span><span class="card__tab">Empresarial</span></div>
+            <div class="card__body">
+              <h3>Direito Empresarial</h3>
+              <p>Contratos, societário, recuperação de empresas e proteção do patrimônio dos sócios.</p>
+              <ul class="pills"><li>Contratos</li><li>Societário</li><li>Recuperação</li></ul>
+              <a class="pillbtn" href="#contato">Falar sobre o caso</a>
+            </div>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media"><img src="img/foto-familia.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">02 / 05</span><span class="card__tab">Família</span></div>
+            <div class="card__body">
+              <h3>Família e Sucessões</h3>
+              <p>Divórcio, guarda, inventário e planejamento patrimonial conduzidos com sigilo e firmeza.</p>
+              <ul class="pills"><li>Divórcio</li><li>Guarda</li><li>Inventário</li></ul>
+              <a class="pillbtn" href="#contato">Falar sobre o caso</a>
+            </div>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media"><img src="img/foto-livros.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">03 / 05</span><span class="card__tab">Trabalhista</span></div>
+            <div class="card__body">
+              <h3>Direito do Trabalho</h3>
+              <p>Defesa de empresas e de trabalhadores em reclamações, acordos e passivos acumulados.</p>
+              <ul class="pills"><li>Defesa</li><li>Acordos</li><li>Passivos</li></ul>
+              <a class="pillbtn" href="#contato">Falar sobre o caso</a>
+            </div>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media"><img src="img/foto-justica.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">04 / 05</span><span class="card__tab">Cível</span></div>
+            <div class="card__body">
+              <h3>Contencioso Cível</h3>
+              <p>Indenizações, cobranças e responsabilidade civil, da inicial ao cumprimento da sentença.</p>
+              <ul class="pills"><li>Indenização</li><li>Cobrança</li><li>Recursos</li></ul>
+              <a class="pillbtn" href="#contato">Falar sobre o caso</a>
+            </div>
+          </article>
+
+          <article class="card" data-tilt>
+            <div class="card__media"><img src="img/foto-mesa.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">05 / 05</span><span class="card__tab">Consultivo</span></div>
+            <div class="card__body">
+              <h3>Contratos e Consultivo</h3>
+              <p>Pareceres e revisão de contratos para resolver o risco antes que ele vire processo.</p>
+              <ul class="pills"><li>Pareceres</li><li>Contratos</li><li>Prevenção</li></ul>
+              <a class="pillbtn" href="#contato">Falar sobre o caso</a>
+            </div>
+          </article>
+        </div>
+      </div>
+      <div class="pan__progress" aria-hidden="true"><span data-pan-bar></span></div>
+    </section>
+
+    <!-- ÁREAS DE ATUAÇÃO EM DETALHE -->
+    <section class="sec sec--tint" id="atuacao">
+      <div class="sec__in">
+        <div class="sec__head" data-reveal>
+          <p class="eyebrow">Áreas de atuação</p>
+          <h2 class="sec-h">O que fazemos, em cada frente.</h2>
+          <p class="sec__sub">Cada área é conduzida por sócios com experiência específica no tema. Veja os principais serviços e como atuamos.</p>
+        </div>
+        <div class="adet">
+          <article class="adet__row" data-reveal>
+            <span class="adet__n">01</span>
+            <div class="adet__main"><h3>Direito Empresarial</h3><p>Assessoria jurídica para empresas de todos os portes, da constituição à reestruturação. Reduzimos riscos e damos segurança às decisões do negócio.</p></div>
+            <ul class="adet__list"><li>Constituição de sociedades e acordos de sócios</li><li>Elaboração e revisão de contratos comerciais</li><li>Recuperação judicial e extrajudicial</li><li>Fusões, aquisições e reorganizações societárias</li><li>Proteção patrimonial e planejamento sucessório</li><li>Compliance e adequação à LGPD</li></ul>
+          </article>
+          <article class="adet__row" data-reveal>
+            <span class="adet__n">02</span>
+            <div class="adet__main"><h3>Família e Sucessões</h3><p>Conduzimos questões familiares com sensibilidade, sigilo e firmeza, priorizando sempre que possível a solução consensual.</p></div>
+            <ul class="adet__list"><li>Divórcio consensual e litigioso</li><li>Guarda, convivência e pensão alimentícia</li><li>União estável e pacto antenupcial</li><li>Inventário e partilha, judicial e extrajudicial</li><li>Testamento e planejamento sucessório</li><li>Holding familiar</li></ul>
+          </article>
+          <article class="adet__row" data-reveal>
+            <span class="adet__n">03</span>
+            <div class="adet__main"><h3>Direito do Trabalho</h3><p>Atuamos para empresas e para trabalhadores, com análise técnica do caso e foco em prevenir e reduzir passivos.</p></div>
+            <ul class="adet__list"><li>Defesa em reclamações trabalhistas</li><li>Acordos e negociações coletivas</li><li>Auditoria e mapeamento de passivo trabalhista</li><li>Rescisões, verbas e horas extras</li><li>Acidente de trabalho e assédio</li><li>Consultoria preventiva para o RH</li></ul>
+          </article>
+          <article class="adet__row" data-reveal>
+            <span class="adet__n">04</span>
+            <div class="adet__main"><h3>Contencioso Cível</h3><p>Condução de processos de conhecimento, execução e recursos, com estratégia probatória definida desde o início.</p></div>
+            <ul class="adet__list"><li>Indenização e responsabilidade civil</li><li>Cobranças e execuções</li><li>Direito do consumidor</li><li>Contratos imobiliários e locações</li><li>Recursos aos tribunais estaduais e superiores</li><li>Mediação e arbitragem</li></ul>
+          </article>
+          <article class="adet__row" data-reveal>
+            <span class="adet__n">05</span>
+            <div class="adet__main"><h3>Contratos e Consultivo</h3><p>Pareceres e acompanhamento contínuo para decidir com segurança e evitar que o risco vire processo.</p></div>
+            <ul class="adet__list"><li>Pareceres jurídicos</li><li>Redação e revisão de contratos</li><li>Due diligence</li><li>Assessoria mensal para empresas</li><li>Orientação preventiva e treinamentos</li><li>Análise de riscos regulatórios</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FAIXA COM COLUNAS + CARTÃO DE VIDRO E ALTERNADOR -->
+    <section class="band band--columns" aria-labelledby="band1">
+      <img class="band__img" src="img/foto-justica.webp" alt="" loading="lazy" width="1280" height="853">
+      <div class="band__in">
+        <div class="glass-card cut glass" data-spot data-reveal data-switch>
+          <div class="switch" role="tablist" aria-label="Perfil de cliente">
+            <button class="switch__b is-on" role="tab" aria-selected="true" data-sw="pf">Pessoa física</button>
+            <button class="switch__b" role="tab" aria-selected="false" data-sw="pj">Empresa</button>
+          </div>
+          <div class="switch__body" data-sw-body="pf">
+            <h2 id="band1" class="h3">Seu caso, sem jargão</h2>
+            <p>Explicamos cada etapa em linguagem clara, com prazos e custos por escrito, para que você decida com segurança.</p>
+            <ul class="ticks"><li>{{icon:check}} Família e sucessões</li><li>{{icon:check}} Indenizações e cobranças</li><li>{{icon:check}} Direitos do trabalhador</li></ul>
+          </div>
+          <div class="switch__body" data-sw-body="pj" hidden>
+            <h2 class="h3">Risco jurídico sob controle</h2>
+            <p>Estruturamos contratos, sociedade e defesa para que a operação cresça sem herdar passivos que poderiam ser evitados.</p>
+            <ul class="ticks"><li>{{icon:check}} Contratos e societário</li><li>{{icon:check}} Defesa trabalhista e cível</li><li>{{icon:check}} Pareceres e consultoria</li></ul>
+          </div>
+          <a class="link" href="#contato">Agendar consulta {{icon:arrow-up-right}}</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PALAVRA DO SÓCIO: texto que se revela + selo 3D em CSS -->
+    <section class="manifesto" data-manifesto id="escritorio">
+      <div class="manifesto__sticky">
+        <div>
+          <p class="manifesto__text" data-words>Não prometemos resultado. Entregamos <span class="hl">estratégia, prazo e prova</span> em cada etapa do processo.</p>
+          <p class="manifesto__by">Sócio fundador</p>
+        </div>
+        <div class="seal3d" data-seal3d aria-hidden="true">
+          <div class="seal3d__face seal3d__face--front">
+            <svg viewBox="0 0 200 200" focusable="false">
+              <defs><path id="ring" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs>
+              <text class="seal3d__ring"><textPath href="#ring" textLength="498" lengthAdjust="spacing">ADVOCACIA - RIGOR NA PROVA - FIRMEZA NA DEFESA - </textPath></text>
+              <circle cx="100" cy="100" r="62" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width=".8"/>
+              <text x="100" y="134" class="seal3d__m" text-anchor="middle">A</text>
+            </svg>
+          </div>
+          <div class="seal3d__face seal3d__face--back">
+            <svg viewBox="0 0 200 200" focusable="false">
+              <circle cx="100" cy="100" r="62" fill="none" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="100" cy="100" r="56" fill="none" stroke="currentColor" stroke-width=".8"/>
+              <text x="100" y="118" class="seal3d__m seal3d__m--sm" text-anchor="middle">Desde</text>
+              <text x="100" y="156" class="seal3d__m seal3d__m--sm" text-anchor="middle">1998</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMO ATENDEMOS -->
+    <section class="sec" id="atendimento">
+      <div class="sec__in">
+        <div class="sec__head" data-reveal>
+          <p class="eyebrow">Como atendemos</p>
+          <h2 class="sec-h">Do primeiro contato ao encerramento, você sabe onde está.</h2>
+          <p class="sec__sub">Nosso atendimento segue cinco etapas, sempre nesta ordem. Prazos, custos e riscos são apresentados por escrito, antes de qualquer decisão.</p>
+        </div>
+        <ol class="steps">
+          <li data-reveal><span class="steps__n">1</span><h3>Primeiro contato</h3><p>Você nos procura por telefone, WhatsApp ou pelo formulário. Retornamos em até um dia útil para agendar a conversa.</p></li>
+          <li data-reveal><span class="steps__n">2</span><h3>Consulta inicial</h3><p>Um sócio escuta o caso, analisa os documentos e explica, em linguagem clara, os caminhos possíveis, os riscos e os prazos.</p></li>
+          <li data-reveal><span class="steps__n">3</span><h3>Proposta de honorários</h3><p>Apresentamos por escrito o escopo do trabalho, a forma de cobrança e as condições, em respeito à tabela de honorários da OAB.</p></li>
+          <li data-reveal><span class="steps__n">4</span><h3>Condução do caso</h3><p>Elaboramos as peças, acompanhamos prazos e audiências e negociamos quando o acordo for o melhor caminho.</p></li>
+          <li data-reveal><span class="steps__n">5</span><h3>Acompanhamento</h3><p>Você recebe atualizações periódicas e, ao final, um relatório com a orientação sobre os próximos passos.</p></li>
+        </ol>
+        <div class="how">
+          <article class="how__card" data-reveal>
+            <h3>Formas de atendimento</h3>
+            <ul class="how__list">
+              <li>{{icon:buildings:light}}<div><b>Presencial</b><span>No escritório, com hora marcada e total reserva.</span></div></li>
+              <li>{{icon:video-camera:light}}<div><b>Videoconferência</b><span>Para clientes de outras cidades ou com pouca disponibilidade.</span></div></li>
+              <li>{{icon:chat-circle-text:light}}<div><b>WhatsApp e telefone</b><span>Para agendamentos, dúvidas e atualizações do andamento.</span></div></li>
+            </ul>
+          </article>
+          <article class="how__card how__card--dark" data-reveal>
+            <h3>O que levar à primeira consulta</h3>
+            <ul class="how__docs">
+              <li>{{icon:check}} Documento de identidade e CPF</li>
+              <li>{{icon:check}} Comprovante de endereço</li>
+              <li>{{icon:check}} Contratos, notificações e intimações</li>
+              <li>{{icon:check}} Comprovantes, e-mails e mensagens sobre o caso</li>
+              <li>{{icon:check}} Um resumo com datas e fatos, mesmo que informal</li>
+            </ul>
+            <p>Não tem todos os documentos? Venha mesmo assim. Dizemos o que falta e como obter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPROMISSOS -->
+    <section class="sec sec--navy" id="compromissos">
+      <div class="sec__in">
+        <div class="sec__head" data-reveal>
+          <p class="eyebrow">Nossos compromissos</p>
+          <h2 class="sec-h">O que você pode esperar de nós, sempre.</h2>
+        </div>
+        <ul class="vals">
+          <li data-reveal>{{icon:lock-key:light}}<h3>Sigilo profissional</h3><p>Tudo o que você nos conta é protegido pelo sigilo, por dever legal e por princípio.</p></li>
+          <li data-reveal>{{icon:receipt:light}}<h3>Honorários transparentes</h3><p>Forma de cobrança combinada por escrito antes do início, sem custos escondidos.</p></li>
+          <li data-reveal>{{icon:chat-circle-text:light}}<h3>Linguagem clara</h3><p>Explicamos cada etapa sem jargão, para que você decida com segurança.</p></li>
+          <li data-reveal>{{icon:handshake:light}}<h3>Atendimento pelos sócios</h3><p>Quem recebe o seu caso é quem o conduz. Sem repasse e sem intermediários.</p></li>
+          <li data-reveal>{{icon:seal-check:light}}<h3>Ética e conformidade</h3><p>Atuação orientada pelo Código de Ética e Disciplina da OAB, sem promessa de resultado.</p></li>
+          <li data-reveal>{{icon:calendar-check:light}}<h3>Respeito aos prazos</h3><p>Controle rigoroso de prazos processuais e retorno ágil às suas mensagens.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EQUIPE (nomes e registros de exemplo: trocar pelos reais) -->
+    <section class="sec" id="equipe">
+      <div class="sec__in">
+        <div class="sec__head" data-reveal>
+          <p class="eyebrow">Equipe</p>
+          <h2 class="sec-h">Sócios que conduzem cada caso.</h2>
+          <p class="sec__sub">Uma equipe enxuta, com formação sólida e atuação complementar. Todos os sócios atendem diretamente.</p>
+        </div>
+        <div class="team">
+          <article class="member" data-reveal><span class="member__mono" aria-hidden="true">A</span><h3>Nome do sócio fundador</h3><p class="member__role">Sócio fundador, Direito Empresarial</p><p class="member__oab">OAB/UF 000.000</p><p>Mais de 25 anos de atuação em assessoria a empresas, contratos e reestruturações societárias.</p></article>
+          <article class="member" data-reveal><span class="member__mono" aria-hidden="true">B</span><h3>Nome da sócia</h3><p class="member__role">Sócia, Família e Sucessões</p><p class="member__oab">OAB/UF 000.000</p><p>Especialista em conflitos familiares e planejamento sucessório, com foco em soluções consensuais.</p></article>
+          <article class="member" data-reveal><span class="member__mono" aria-hidden="true">C</span><h3>Nome do sócio</h3><p class="member__role">Sócio, Trabalhista e Cível</p><p class="member__oab">OAB/UF 000.000</p><p>Atuação em contencioso estratégico, com ampla experiência em audiências e recursos.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. INFORMATIVOS (títulos de exemplo; links a definir) -->
+    <section class="posts">
+      <div class="posts__head" data-reveal>
+        <h2>Informativos</h2>
+        <a class="link" href="#">Ver todos {{icon:arrow-up-right}}</a>
+      </div>
+      <div class="posts__grid">
+        <a class="post" href="#" data-reveal><div class="post__img"><img src="img/foto-livros.webp" alt="" loading="lazy" width="678" height="452"></div><span class="post__tag">Empresarial</span><h3>Quando revisar o contrato social da empresa</h3><span class="post__more">Ler artigo {{icon:arrow-right}}</span></a>
+        <a class="post" href="#" data-reveal><div class="post__img"><img src="img/foto-familia.webp" alt="" loading="lazy" width="800" height="600"></div><span class="post__tag">Família</span><h3>Guarda compartilhada: o que muda na prática</h3><span class="post__more">Ler artigo {{icon:arrow-right}}</span></a>
+        <a class="post" href="#" data-reveal><div class="post__img"><img src="img/foto-equipe.webp" alt="" loading="lazy" width="900" height="480" style="object-position:30% 50%"></div><span class="post__tag">Trabalhista</span><h3>Passivo trabalhista: como mapear antes da auditoria</h3><span class="post__more">Ler artigo {{icon:arrow-right}}</span></a>
+        <a class="post" href="#" data-reveal><div class="post__img"><img src="img/foto-justica.webp" alt="" loading="lazy" width="1280" height="853" style="object-position:70% 50%"></div><span class="post__tag">Cível</span><h3>Prazo prescricional: três erros que custam o direito</h3><span class="post__more">Ler artigo {{icon:arrow-right}}</span></a>
+      </div>
+    </section>
+
+    <!-- 9. LIVROS + ETAPAS | PAINEL COM NÚMEROS -->
+    <section class="split">
+      <div class="split__img">
+        <img src="img/foto-equipe.webp" alt="" loading="lazy" width="900" height="480">
+        <div class="split__steps cut glass" data-reveal>
+          <h3 class="h3">Como conduzimos</h3>
+          <ol>
+            <li><b>01</b> Escutar</li>
+            <li><b>02</b> Mapear</li>
+            <li><b>03</b> Defender</li>
+            <li><b>04</b> Acompanhar</li>
+          </ol>
+        </div>
+      </div>
+      <div class="split__panel">
+        <h2 data-reveal>Rigor<br>medido</h2>
+        <!-- Números de exemplo (mock): ajustar com os dados reais do escritório. -->
+        <dl class="stats">
+          <div data-reveal><dt><span data-count="28">28</span></dt><dd>anos de atuação contínua</dd></div>
+          <div data-reveal><dt><span data-count="5">5</span></dt><dd>áreas de atuação</dd></div>
+          <div data-reveal><dt><span data-count="1">1</span></dt><dd>dia útil para o primeiro retorno</dd></div>
+        </dl>
+        <a class="btn btn--primary" href="#contato" data-magnetic data-reveal><span class="btn__label" data-split>Conversar com um sócio</span></a>
+      </div>
+    </section>
+
+    <!-- 10. PERFIS DE CLIENTE -->
+    <section class="profiles">
+      <div class="profiles__head" data-reveal><h2>Para quem<br><span class="outline">atuamos</span></h2></div>
+      <div class="profiles__grid">
+        <article class="card" data-reveal>
+            <div class="card__media"><img src="img/foto-contrato.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">01 / 03</span><span class="card__tab">Empresas</span></div>
+            <div class="card__body">
+              <h3>Para empresas</h3>
+              <p>Da startup à indústria familiar: contratos, sociedade e defesa para crescer sem herdar passivos.</p>
+              <ul class="pills"><li>Contratos</li><li>Societário</li><li>Defesa</li></ul>
+              <a class="pillbtn" href="#contato">Agendar consulta</a>
+            </div>
+          </article>
+        <article class="card" data-reveal>
+            <div class="card__media"><img src="img/foto-familia.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">02 / 03</span><span class="card__tab">Famílias</span></div>
+            <div class="card__body">
+              <h3>Para famílias</h3>
+              <p>Decisões delicadas, conduzidas com sigilo e linguagem clara, do primeiro contato ao acordo.</p>
+              <ul class="pills"><li>Sigilo</li><li>Acordos</li><li>Patrimônio</li></ul>
+              <a class="pillbtn" href="#contato">Agendar consulta</a>
+            </div>
+          </article>
+        <article class="card" data-reveal>
+            <div class="card__media"><img src="img/foto-mesa.webp" alt="" loading="lazy" width="400" height="300"><span class="card__corner">03 / 03</span><span class="card__tab">Contratos</span></div>
+            <div class="card__body">
+              <h3>Para negócios</h3>
+              <p>Do primeiro rascunho à assinatura, com cláusulas revisadas por quem vai defendê-las.</p>
+              <ul class="pills"><li>Revisão</li><li>Pareceres</li><li>Assinatura</li></ul>
+              <a class="pillbtn" href="#contato">Agendar consulta</a>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <!-- 11. MODALIDADES DE ATENDIMENTO (sem valores) -->
+    <section class="modes" id="modalidades">
+      <div class="sec__head" data-reveal><p class="eyebrow">Contratação</p><h2 class="sec-h">Formas de contratação.</h2></div>
+      <ul class="modes__list">
+        <li class="mode" data-reveal><span class="mode__n">01</span><h3>Consulta inicial</h3><p>Uma conversa com um sócio para entender o caso e indicar o melhor caminho.</p><a class="link" href="#contato">Agendar consulta {{icon:arrow-up-right}}</a></li>
+        <li class="mode" data-reveal><span class="mode__n">02</span><h3>Acompanhamento consultivo</h3><p>Apoio contínuo para empresas: contratos, pareceres e decisões do dia a dia.</p><a class="link" href="#contato">Agendar consulta {{icon:arrow-up-right}}</a></li>
+        <li class="mode" data-reveal><span class="mode__n">03</span><h3>Contencioso</h3><p>Condução completa do processo, da petição inicial ao cumprimento da sentença.</p><a class="link" href="#contato">Agendar consulta {{icon:arrow-up-right}}</a></li>
+      </ul>
+    </section>
+
+    <!-- PERGUNTAS FREQUENTES -->
+    <section class="sec sec--tint" id="duvidas">
+      <div class="sec__in faqwrap">
+        <div class="sec__head" data-reveal>
+          <p class="eyebrow">Dúvidas frequentes</p>
+          <h2 class="sec-h">Perguntas que recebemos com frequência.</h2>
+          <p class="sec__sub">Não encontrou a sua? Escreva pelo formulário e um sócio responde.</p>
+        </div>
+        <div class="faq" data-reveal>
+          <details><summary>Como funciona a primeira consulta?</summary><p>É uma conversa com um sócio, presencial ou por vídeo, para entender o caso, analisar os documentos e indicar os caminhos possíveis, com seus riscos e prazos. Ao final, você recebe a proposta de honorários por escrito e decide com calma se quer contratar.</p></details>
+          <details><summary>Quanto custa contratar um advogado?</summary><p>Os honorários variam conforme a área, a complexidade e a duração do caso. Seguimos a tabela de honorários da OAB e combinamos tudo por escrito, antes de começar: valor, forma de pagamento e o que está incluído.</p></details>
+          <details><summary>Vocês garantem o resultado do processo?</summary><p>Não. O Código de Ética da OAB proíbe a promessa de resultado, e nenhum advogado sério pode garanti-lo. O que assumimos é o compromisso com a melhor estratégia, a prova bem construída e a comunicação transparente em todas as etapas.</p></details>
+          <details><summary>Minhas informações ficam em sigilo?</summary><p>Sim. O sigilo profissional é um dever do advogado e vale desde a primeira conversa, mesmo que você decida não contratar o escritório. Os dados que você compartilha são tratados conforme a Lei Geral de Proteção de Dados.</p></details>
+          <details><summary>Quanto tempo dura um processo?</summary><p>Depende do tipo de ação, do tribunal e da complexidade do caso. Na consulta inicial indicamos uma estimativa realista e, sempre que possível, avaliamos alternativas como acordo, mediação ou solução extrajudicial, que costumam ser mais rápidas.</p></details>
+          <details><summary>Preciso ir ao escritório?</summary><p>Não necessariamente. Atendemos presencialmente, por videoconferência, telefone e WhatsApp. Documentos podem ser enviados digitalmente e muitos atos do processo são realizados de forma eletrônica.</p></details>
+          <details><summary>Vocês atendem empresas de forma contínua?</summary><p>Sim. Além de casos pontuais, oferecemos acompanhamento consultivo mensal, com apoio em contratos, pareceres e decisões do dia a dia, para que a empresa previna problemas antes que se tornem processos.</p></details>
+          <details><summary>Quais documentos devo levar?</summary><p>Documento de identidade, CPF, comprovante de endereço e tudo o que se relacione ao caso: contratos, notificações, intimações, e-mails e mensagens. Se faltar algo, dizemos o que é necessário e como obter.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. FAIXA COM SKYLINE + FORMULÁRIO (segure para assinar) -->
+    <section class="band band--form" id="contato">
+      <img class="band__img" src="img/foto-contrato.webp" alt="" loading="lazy" width="852" height="447">
+      <div class="band__in band__in--form">
+        <div class="band__lead" data-reveal>
+          <h2>Conte o caso.<br>Um sócio<br>responde.</h2>
+          <p>Descreva a situação em poucas linhas. Retornamos em até um dia útil, sem compromisso.</p>
+        </div>
+        <form class="sheet cut glass" data-form novalidate>
+          <div class="field">
+            <label for="f-nome">Nome completo</label>
+            <input id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como devemos chamar você" required aria-describedby="e-nome">
+            <p class="field__err" id="e-nome" role="alert"></p>
+          </div>
+          <div class="field">
+            <label for="f-tel">WhatsApp</label>
+            <input id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required aria-describedby="e-tel">
+            <p class="field__err" id="e-tel" role="alert"></p>
+          </div>
+          <fieldset class="field field--chips">
+            <legend>Área do caso</legend>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="area" value="empresarial" checked><span>Empresarial</span></label>
+              <label class="chip"><input type="radio" name="area" value="familia"><span>Família</span></label>
+              <label class="chip"><input type="radio" name="area" value="trabalhista"><span>Trabalhista</span></label>
+              <label class="chip"><input type="radio" name="area" value="civel"><span>Cível</span></label>
+              <label class="chip"><input type="radio" name="area" value="outro"><span>Outro</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="f-msg">Resumo do caso <span class="opt">(opcional)</span></label>
+            <textarea id="f-msg" name="mensagem" rows="3" placeholder="O que aconteceu e o que você precisa resolver"></textarea>
+          </div>
+
+          <button class="hold" type="button" data-hold aria-describedby="hold-hint" aria-label="Segure para assinar e enviar o pedido de consulta">
+            <span class="hold__layer hold__layer--base">
+              <span class="hold__label"><span class="hold__idle">{{icon:signature}}Segure para assinar</span><span class="hold__ok">{{icon:seal-check}}Pedido assinado</span></span>
+            </span>
+            <span class="hold__layer hold__layer--ink" aria-hidden="true">
+              <span class="hold__label"><span class="hold__idle">{{icon:signature}}Segure para assinar</span><span class="hold__ok">{{icon:seal-check}}Pedido assinado</span></span>
+            </span>
+          </button>
+          <p class="hold__hint" id="hold-hint">Mantenha o botão pressionado por um segundo e meio. No teclado, segure Espaço ou Enter.</p>
+
+          <div class="stamp" data-stamp aria-live="polite">
+            <div class="stamp__seal" aria-hidden="true">A</div>
+            <p class="stamp__msg">Pedido recebido. Um sócio retorna em até um dia útil.</p>
+            <button type="button" class="stamp__reset" data-reset>Preencher outro pedido</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- 13. ENDEREÇOS + MAPA (endereços de exemplo) -->
+    <section class="visit">
+      <div class="visit__grid">
+        <dl class="visit__data" data-reveal>
+          <div><dt>{{icon:phone:light}} WhatsApp</dt><dd>(11) 0000-0000</dd></div>
+          <div><dt>{{icon:envelope-simple:light}} E-mail</dt><dd>contato@advocacia.com.br</dd></div>
+          <div><dt>{{icon:clock:light}} Horário</dt><dd>Segunda a sexta, das 9h às 18h</dd></div>
+        </dl>
+        <article class="office cut" data-spot data-reveal><span class="office__k">Matriz</span><h3>Centro</h3><p>Rua do Fórum, 000<br>Centro, Cidade, UF</p></article>
+        <article class="office cut" data-spot data-reveal><span class="office__k">Filial</span><h3>Zona Sul</h3><p>Avenida Exemplo, 000<br>Bairro, Cidade, UF</p></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__row">
+      <div class="footer__brand">
+        <a class="brand" href="#topo" aria-label="Voltar ao topo">
+          <span class="brand__mark cut" aria-hidden="true">A</span>
+          <span class="brand__name">Advocacia<small>Defesa estratégica</small></span>
+        </a>
+        <p>Defesa estratégica com atendimento direto dos sócios.</p>
+      </div>
+      <nav class="footer__col" aria-label="Rodapé, páginas">
+        <h4>Escritório</h4>
+        <a href="#quem-somos">Quem somos</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#atendimento">Atendimento</a>
+        <a href="#duvidas">Dúvidas</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <nav class="footer__col" aria-label="Rodapé, áreas">
+        <h4>Áreas</h4>
+        <a href="#atuacao">Empresarial</a>
+        <a href="#atuacao">Família e sucessões</a>
+        <a href="#atuacao">Trabalhista</a>
+        <a href="#atuacao">Cível e consultivo</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="tel:+551100000000">(11) 0000-0000</a>
+        <a href="mailto:contato@advocacia.com.br">contato@advocacia.com.br</a>
+        <span>Rua do Fórum, 000, Centro</span>
+      </div>
+    </div>
+    <div class="footer__bottom"><p>Conteúdo de caráter informativo, sem finalidade de captação de clientela, conforme o Provimento 205/2021 do Conselho Federal da OAB.</p><a class="link" href="#topo">Voltar ao topo {{icon:arrow-up-right}}</a></div>
+  </footer>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
